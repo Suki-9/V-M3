@@ -8,7 +8,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
-  "files": ["/dist"],
+  "files": ["/dist", "/types"],
   "main": "./dist/v-m3.umd.js",
   "module": "./dist/v-m3.js",
   "types": "./types/index.d.ts",
