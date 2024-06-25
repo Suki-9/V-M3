@@ -8,14 +8,11 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
-  "files": ["/dist", "/types"],
-  "main": "./dist/v-m3.umd.js",
-  "module": "./dist/v-m3.js",
-  "types": "./types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/v-m3.js",
-      "require": "./dist/v-m3.umd.js"
+      "require": "./dist/v-m3.umd.js",
+      "types": "./types/v-m3.d.ts"
     }
   },
   "dependencies": {

@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [vue(), cssInjectedByJsPlugin()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: resolve(__dirname, 'src/v-m3.ts'),
       formats: ['es', 'umd'],
       name: 'v-m3',
       fileName: 'v-m3',
