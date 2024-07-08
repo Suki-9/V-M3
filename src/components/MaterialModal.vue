@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onMounted, onUpdated, ref } from 'vue';
 
 const show = defineModel<boolean>('show', {
   required: true
@@ -15,12 +15,15 @@ const p = withDefaults(defineProps<{
 
 const root = ref<HTMLElement>();
 
-onMounted(() => {
+const setCoordinate = () => {
   if (root.value) {
     root.value.style.top  = p.y ? `${p.y}px` : '50%';
     root.value.style.left = p.x ? `${p.x}px` : '50%';
   }
-})
+}
+
+onUpdated(() => setCoordinate());
+onMounted(() => setCoordinate());
 </script>
 
 <template>
