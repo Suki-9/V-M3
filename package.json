@@ -16,16 +16,16 @@
     }
   },
   "dependencies": {
-    "@types/node": "^20.14.8",
-    "@vue/runtime-core": "^3.4.30",
+    "@types/node": "^20.14.10",
+    "@vue/runtime-core": "^3.4.31",
     "sass": "^1.77.6",
     "vite-plugin-css-injected-by-js": "^3.5.1",
-    "vue": "^3.4.30"
+    "vue": "^3.4.31"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
-    "typescript": "^5.5.2",
-    "vite": "^5.3.1",
-    "vue-tsc": "^2.0.22"
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vue-tsc": "^2.0.26"
   }
 }
